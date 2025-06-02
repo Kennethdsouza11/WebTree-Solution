@@ -46,8 +46,8 @@ st.set_page_config(
 # loading the trained model and comp
 @st.cache_resource
 def load_model():
-    model = joblib.load('content_moderation_model.joblib')
-    vectorizer = joblib.load('text_vectorizer.joblib')
+    model = joblib.load('content_moderation_model2.joblib')
+    vectorizer = joblib.load('text_vectorizer2.joblib')
     return model, vectorizer
 
 # funct to get pred and conf score
